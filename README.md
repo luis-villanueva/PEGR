@@ -61,4 +61,14 @@ class CbCurrencyController extends Controller
     </tr>
   </tfoot>
 </table>
-{{ route('monedas.show', $moneda->idcurrency) }}
+/**
+ * Muestra la moneda seleccionada por id.
+ * @param $IdCurrency 
+ * @return Response
+ */
+public function show($IdCurrency)
+{
+  // Devuelve la moneda seleccionada por id.
+  $moneda = CbCurrency::find($IdCurrency);
+  return view('monedas.show')->with('moneda', $moneda);
+}
