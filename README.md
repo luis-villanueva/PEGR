@@ -1,5 +1,9 @@
 # PEGR
 PEGR
+$monedas = CbCurrency::get();   // Devolverá todas las monedas
+use App\CbCurrency;
+return view('monedas.index')->with('monedas', $monedas);
+
 <h1 class="text-primary">Lista de Monedas</h1>
  
 <table class="table table-bordered" id="tableMonedas">
