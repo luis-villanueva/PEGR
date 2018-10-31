@@ -61,3 +61,4 @@ class CbCurrencyController extends Controller
     </tr>
   </tfoot>
 </table>
+{{ route('monedas.show', $moneda->idcurrency) }}
