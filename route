@@ -1,0 +1,1 @@
+{{ route('monedas.show', $moneda->idcurrency) }}
